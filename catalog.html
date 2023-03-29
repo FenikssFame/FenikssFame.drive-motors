@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 
@@ -15,14 +17,20 @@
         <li class="info"><a href="#">Доставка и оплата</a></li>
     </ul>
 
-    <a href="#"><img src="image/лого.svg" width="80" height="76" alt="Drive moto" /></a>
+    <a href="#"><img src="image/logo.svg" width="80" height="76" alt="Drive moto" /></a>
 
     <p class="store-info">Москва, ул. Науки 25</p>
 
     <ul class="store-info">
-        <li class="info"><a href="#">Избранное</a></li>
-        <button class="info">Авторизация</button>
-        <li class="info"><a href="#">Корзина</a></li>
+        <li class="info">
+            <a class="visually-hidden" href="#">Избранное</a>
+        </li>
+        <li class="info">
+            <button class="visually-hidden">Авторизация</button>
+        </li>
+        <li class="info">
+            <a class="visually-hidden" href="#">Корзина</a>
+        </li>
     </ul>
 
     <nav class="menu-crumb">
@@ -37,10 +45,6 @@
             <li class="crumb"><a href="#">Запчасти</a></li>
         </ul>
     </nav>
-
-    <div class="">
-
-    </div>
 </header>
 
 <aside class="site-aside">
@@ -78,10 +82,10 @@
     </ul>
 
     <ul class="messengers">
-        <li><a href="#">Инстаграмм</a></li>
-        <li><a href="#">ВКонтакте</a></li>
-        <li><a href="#">Фейсбук</a></li>
-        <li><a href="#">Ю-Туб</a></li>
+        <li><a class="visually-hidden" href="#">Инстаграмм</a></li>
+        <li><a class="visually-hidden" href="#">ВКонтакте</a></li>
+        <li><a class="visually-hidden" href="#">Фейсбук</a></li>
+        <li><a class="visually-hidden" href="#">Ю-Туб</a></li>
     </ul>
 </footer>
 

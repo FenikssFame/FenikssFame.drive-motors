@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="styles.css">
     <title>Drive-moto</title>
 </head>
@@ -16,14 +17,20 @@
         <li class="info"><a href="#">Доставка и оплата</a></li>
     </ul>
 
-    <a href="#"><img src="image/лого.svg" width="80" height="76" alt="Drive moto" /></a>
+    <a href="#"><img src="image/logo.svg" width="80" height="76" alt="Drive moto" /></a>
 
     <p class="store-info">Москва, ул. Науки 25</p>
 
     <ul class="store-info">
-        <li class="info"><a href="#">Избранное</a></li>
-        <button class="info">Авторизация</button>
-        <li class="info"><a href="#">Корзина</a></li>
+        <li class="info">
+            <a class="visually-hidden" href="#">Избранное</a>
+        </li>
+        <li class="info">
+            <button class="visually-hidden">Авторизация</button>
+        </li>
+        <li class="info">
+            <a class="visually-hidden" href="#">Корзина</a>
+        </li>
     </ul>
 
     <nav class="menu-crumb">
@@ -40,7 +47,7 @@
     </nav>
 </header>
 
-<body class="page-body">
+<main class="page-main">
     <h1>Интернет магазин</h1>
     <div class="slider-sale">
         <div class="slider">
@@ -50,7 +57,7 @@
             <p>190 000</p>
             <p>225 000</p>
             <a>
-                <img src="image/438d21d0914ff349e903072c903b7b8a 1.png" width="125" height="177" alt="Лодочный мотор">
+                <img src="image/boat-Motors-Suzuki-DF9-9BRS.png" width="125" height="177" alt="Лодочный мотор">
             </a>
             <p>
                 Лодочный мотор 
@@ -67,9 +74,9 @@
 
     <form>
         <ul class="button-search">
-            <button class="button">Поиск по номеру</button>
-            <button class="button">Поиск по марке</button>
-            <button class="button">Поиск по названию товара</button>
+            <li><button class="button">Поиск по номеру</button></li>
+            <li><button class="button">Поиск по марке</button></li>
+            <li><button class="button">Поиск по названию товара</button></li>
         </ul>
 
         <input type="text" value="Введите марку" />
@@ -81,33 +88,33 @@
         <ul>
             <li>
                 <p class="equipment">Квадроциклы</p>
-                <img src="image/CFMOTO-X6-EPS_blue 1.png" width="131" height="100" alt="Квадроциклы">
+                <img src="image/ATVs.png" width="131" height="100" alt="Квадроциклы">
                 <a href="#">Подробнее ></a>
             </li>
             <li>
                 <p class="equipment">Гидроциклы</p>
-                <img src="image/jet_ski_PNG90 1.png" width="152" height="81" alt="Гидроциклы">
+                <img src="image/gidrotsikls.png" width="152" height="81" alt="Гидроциклы">
                 <a href="#">Подробнее ></a>
             </li>
             <li>
                 <p class="equipment">Катера</p>
-                <img src="image/boat_PNG36 1.png" width="207" height="101" alt="Катера">
+                <img src="image/boats.png" width="207" height="101" alt="Катера">
                 <a href="#">Подробнее ></a>
             </li>
             <li>
                 <p class="equipment">Снегоходы</p>
-                <img src="image/rmvector551 1.png" width="165" height="105" alt="Снегоходы">
+                <img src="image/snowmobiles.png" width="165" height="105" alt="Снегоходы">
                 <a href="#">Подробнее ></a>
             </li>
             <li>
                 <p class="equipment">Вездеходы</p>
-                <img src="image/2018-Maverick-X3-X-rc-TURBO-R-Carbon-Black-and-Octane-Blue_3-4-front4072 1.png"
+                <img src="image/all-Terrain-Vehicles.png"
                     width="157" height="101" alt="Вездеходы">
                 <a href="#">Подробнее ></a>
             </li>
             <li>
                 <p class="equipment">Двигатели</p>
-                <img src="image/images 1.png" width="66" height="113" alt="Двигатели">
+                <img src="image/motors.png" width="66" height="113" alt="Двигатели">
                 <a href="#">Подробнее ></a>
             </li>
         </ul>
@@ -126,26 +133,26 @@
 
         <ul>
             <li>
-                <button>Избранное</button>
-                <img src="image/cq5dam.web.768 1.png" width="200" height="200" alt="Двигатели">
+                <button class="visually-hidden">Избранное</button>
+                <img src="image/waterproof-Backpack.png" width="200" height="200" alt="Двигатели">
                 <p>Водонепроницаемый Рюкзак</p>
                 <p>9 800</p>
             </li>
             <li>
-                <button>Избранное</button>
-                <img src="image/55a4f760715a1 1.png" width="200" height="200" alt="Двигатели">
+                <button class="visually-hidden">Избранное</button>
+                <img src="image/jacket-BRP-Men's-Airflow-Lifet-PDF.png" width="200" height="200" alt="Двигатели">
                 <p>Спасательный жилет BRP Men's Airflow PFD</p>
                 <p>6 900</p>
             </li>
             <li>
-                <button>Избранное</button>
-                <img src="image/s-l225 1.png" width="200" height="200" alt="Двигатели">
+                <button class="visually-hidden">Избранное</button>
+                <img src="image/brp-Audio-Premium-System.png" width="200" height="200" alt="Двигатели">
                 <p>BRP Audio-Premium System</p>
                 <p>68 000</p>
             </li>
             <li>
-                <button>Избранное</button>
-                <img src="image/s-l1600 1.png" width="200" height="200" alt="Двигатели">
+                <button class="visually-hidden">Избранное</button>
+                <img src="image/rescue-Equipment.png" width="200" height="200" alt="Двигатели">
                 <p>Спасательное снаряжение</p>
                 <p>Нет в наличии</p>
                 <a href="#">Сообщить о поступлении</a>
@@ -156,7 +163,6 @@
     </section>
 
     <div class="buner">
-        <img />
         <p>Скидки на все запчасти до 70%</p>
         <button>Посмотреть все</button>
     </div>
@@ -175,34 +181,34 @@
 
         <ul>
             <li>
-                <button>Избранное</button>
-                <img src="image/cq5dam.web.768 1.png" width="200" height="200" alt="Двигатели">
+                <button class="visually-hidden">Избранное</button>
+                <img src="image/brp-Audio-portable-system.png" width="200" height="200" alt="Двигатели">
                 <p>BRP Audio-портативная система</p>
                 <p>Нет в наличии</p>
                 <a href="#">Сообщить о поступлении</a>
             </li>
             <li>
-                <button>Избранное</button>
-                <img src="image/55a4f760715a1 1.png" width="200" height="200" alt="Двигатели">
+                <button class="visually-hidden">Избранное</button>
+                <img src="image/garmin-Echomap-Plus-62cv.png" width="200" height="200" alt="Двигатели">
                 <p>Garmin Echomap Plus 62cv</p>
                 <p>45 800</p>
             </li>
             <li>
-                <button>Избранное</button>
-                <img src="image/295100712 1.png" width="200" height="200" alt="Двигатели">
+                <button class="visually-hidden">Избранное</button>
+                <img src="image/rf-D-E-S-S-TM-Key.png" width="200" height="200" alt="Двигатели">
                 <p>RF D.E.S.S.TM Key</p>
                 <p>Нет в наличии</p>
                 <a href="#">Сообщить о поступлении</a>
             </li>
             <li>
-                <button>Избранное</button>
-                <img src="image/cq5dam.web.768 2.png" width="200" height="200" alt="Двигатели">
+                <button class="visually-hidden">Избранное</button>
+                <img src="image/men-Suit.png" width="200" height="200" alt="Двигатели">
                 <p>Мужской костюм 3мм</p>
                 <p>7 000</p>
             </li>
         </ul>
     </section>
-</body>
+</main>
 
 <footer class="site-footer">
     <p>Подпишитесь на нашу рассылку и узнайте о акциях быстрее</p>
@@ -224,10 +230,10 @@
     </ul>
 
     <ul class="messengers">
-        <li><a href="#">Инстаграмм</a></li>
-        <li><a href="#">ВКонтакте</a></li>
-        <li><a href="#">Фейсбук</a></li>
-        <li><a href="#">Ю-Туб</a></li>
+        <li><a class="visually-hidden" href="#">Инстаграмм</a></li>
+        <li><a class="visually-hidden" href="#">ВКонтакте</a></li>
+        <li><a class="visually-hidden" href="#">Фейсбук</a></li>
+        <li><a class="visually-hidden" href="#">Ю-Туб</a></li>
     </ul>
 </footer>
 
