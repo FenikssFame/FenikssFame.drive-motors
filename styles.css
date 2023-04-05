@@ -1,114 +1,364 @@
-@font-face{
-    font-family: 'SF Pro Display Bold';
-    src: url(fonts/sf-pro_display-font/SF-Pro-Display-Bold.woff) format('woff');
-}
-@font-face{
-    font-family: 'SF Pro Display';
-    src: url(fonts/sf-pro_display-font/SF-Pro-Display-Light.woff) format('woff');
+@font-face {
+    font-style: normal;
+    font-weight: 700;
+    font-family: "SF Pro Display Bold";
+
+    font-display: swap;
+    src: url(fonts/sf-pro_display-font/SF-Pro-Display-Bold.woff2) format("woff2"),
+        url(fonts/sf-pro_display-font/SF-Pro-Display-Bold.woff) format("woff");
 }
 
-.store-info{
+@font-face {
+    font-style: normal;
+    font-weight: 400;
+    font-family: "SF Pro Display";
+
+    font-display: swap;
+    src: url(fonts/sf-pro_display-font/SF-Pro-Display-Light.woff2) format("woff2"),
+        url(fonts/sf-pro_display-font/SF-Pro-Display-Light.woff) format("woff");
+}
+
+/*
+@font-face { 
+    font-style: normal;
+    font-weight: 700;
+    font-family: 'BarlowBold';
+
+    font-display: swap;
+    src:
+    url(fonts/barlow/Barlow-Bold.woff2) format('woff2'),
+    url(fonts/barlow/Barlow-Bold.woff) format('woff');
+}*/
+
+.main,
+.site-header,
+.menu-footer {
+    position: relative;
+    margin: auto;
+    width: 1171px;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.hidden {
+    display: none !important;
+}
+
+img {
+    margin: auto;
+}
+
+.store-info {
     /*position: relative;*/
     height: 97px;
     display: flex;
     margin-top: 25px;
 }
 
-.menu{
+.menu {
     display: flex;
     justify-content: center;
     padding: 0;
     margin-top: 28px;
 }
 
-.menu-link{
-    display:flex;
+.menu-link {
+    display: flex;
 }
 
-.link{
+.link {
     font-size: 20px;
     text-decoration: none;
-    font-family: 'SF Pro Display Bold', 'Tahoma', 'sans-serif';
-    color: #2F3035;
+    font-family: "SF Pro Display Bold", "Tahoma", "sans-serif";
+    color: #2f3035;
 }
+
 #stock {
     margin-left: 56px;
     margin-right: 56px;
-
 }
 
-.logo{
+.logo {
     width: 80px;
     height: 76px;
     margin-left: 96px;
-    margin-right: 100px;
+    margin-right: 101px;
 }
 
-.location{
-    width: 24px;
-    height: 30px;
+.location {
+    display: flex;
+}
+
+.location-text {
     font-size: 20px;
-    font-family: 'SF Pro Display Bold', 'Tahoma', 'sans-serif';
-    color: #2F3035;
-    background: url(image/location.svg);
+    font-family: "SF Pro Display Bold", "Tahoma", "sans-serif";
+    color: #2f3035;
+    text-decoration: none;
+    word-spacing: 2px;
+    margin-top: 18px;
+    padding-top: 10px;
+    padding-left: 27px;
+    background-image: url(image/location.svg);
+    background-position: left top;
+    background-size: 24px 30px;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left ;
-    margin-top: 28px;
-    margin-bottom: 16px;
+}
+
+/*
+.delete{
+    position: absolute;
+    width: 1171px;
+    height: 37px;
+    border-width: 1pz;
+    border: solid;
+}
+*/
+.menu-icon {
+    position: relative;
+    display: flex;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 16;
+    margin-left: auto;
+    list-style-type: none;
+}
+
+.link-like {
+    width: 24px;
+    background-image: url(image/like.svg);
+    background-position: center;
+    background-size: 24px 22px;
+    background-repeat: no-repeat;
+}
+
+.link-login {
+    width: 24px;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-image: url(image/admin.svg);
+    background-position: center;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+}
+
+.link-basket {
+    width: 30px;
+    margin-right: 23px;
+    background-image: url(image/shop.svg);
+    background-position: center;
+    background-size: 30px 23px;
+    background-repeat: no-repeat;
+}
+
+.menu-crumb {
+    display: flex;
+    height: 53px;
+    background-color: #f0f0f4;
+    margin: auto;
+    padding: 0;
+}
+
+.crumb {
+    display: flex;
+    margin: auto;
+    font-size: 20px;
+}
+
+.crumb-link {
+    height: 24px;
+    text-decoration-line: none;
+    font-family: "SF Pro Display", "Tahoma", "sans-serif";
+    color: #2f3035;
+}
+
+.ATV {
+    margin-left: 0;
+}
+
+.parts {
+    margin-right: 2px;
+}
+
+/*page-header-end*/
+
+/*page-main */
+
+/*Форма поиска*/
+.button-selection {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding-left: 20px;
+    margin-top: 77px;
+    margin-bottom: 0;
+}
+
+.number-selection {}
+
+.brand-selection {
+    margin-left: 54px;
+    margin-right: 60px;
+}
+
+.name-selection {}
+
+.button {
+    width: auto;
+    height: 47px;
+    padding-top: 11px;
+    padding-right: 26px;
+    padding-bottom: 11px;
+    padding-left: 26px;
+    background: #f0f0f4;
+    border-color: #f0f0f4;
+    border-radius: 5px;
+    border-style: solid;
+}
+
+.form {
+    position: relative;
+    display: flex;
+    margin-top: 25px;
+}
+
+.serch-equipment {
+    width: 1025px;
+    height: 50px;
+    background: #f0f0f4;
+    border-color: #f0f0f4;
+    border-radius: 3px;
+    border-style: solid;
+}
+
+.button-search {
+    width: 145px;
+    height: 50px;
+    background: #1c62cd;
+    border-color: #1c62cd;
+    border-radius: 3px;
+    border-style: solid;
+}
+
+/*Выбор техники*/
+.choice-equipment {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    justify-content: space-between;
+    row-gap: 30px;
+    border: solid;
+}
+
+.equipment {
+    display: flex;
+    flex-wrap: wrap;
+    width: 370px;
+    height: 129px;
+    background-color: #ffffff;
+    border: solid;
+    border-width: 1px;
+    border-color: #cdcdcd;
+    border-radius: 3px;
+}
+
+.name-equipment {
+    font-family: "Barlow";
+    font-size: 23px;
+}
+
+.transition {
+    font-size: 14px;
+    color: #c4c4c4;
+    text-decoration: none;
+    font-family: "SF Pro Display", "Tahoma", "sans-serif";
+    line-height: 17px;
+}
+
+.menu-chek {
+    position: relative;
+    display: flex;
+    padding: 0;
+    list-style: none;
+}
+
+.chek-button-product {
+    margin-right: 50px;
+}
+.chek-button{
     
 }
 
-.menu-icon{
-    display: flex;
-    padding: 0;
-    margin-top: 28px;
-}
-
-.menu-crumb{
-    display: flex;
-    height: 53px;
-    background-color: #F0F0F4;
-    margin: auto;
-    padding: 0;
-}
-
-.crumb{
-    display: flex;
-    margin: auto;
-    padding-top: 15px;
-    padding-bottom: 14px;
-    font-size: 20px;
-}
-
-.crumb-link{
-    height: 24px;
-    text-decoration-line: none;
-    font-family: 'SF Pro Display', 'Tahoma', 'sans-serif';
-    color: #2F3035;
-}
-.ATV{
-    margin-left: 0;
-}
-.parts{
-    margin-right: 0;
-}
-
-/*page-main */
-.main, .site-header, .menu-footer{
+/*Карточки товаров*/
+.slider-sale {
     position: relative;
-    margin: auto;         /*Адаптивная центровка по центру*/
-
-    width: 1171px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 81px;
 }
 
-.menu-footer{
+.slider {
+    width: 870px;
+    height: 400px;
+    background-image: url(image/slider.jpg);
+}
+
+.sale {
+    position: relative;
+    width: 265px;
+    height: 397px;
+    margin-top: 1px;
+    border: solid;
+    border-radius: 3px;
+    border-width: 1px;
+    border-color: #cdcdcd;
+}
+
+.products-slider {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    list-style-type: none;
+}
+
+.product-card {
+    width: 271px;
+    height: 403px;
+    text-align: center;
+    border: solid;
+    border-width: 1px;
+    border-color: #cdcdcd;
+    border-radius: 3px;
+}
+
+/*page-footer*/
+.menu-footer {
     position: relative;
     height: 232px;
     left: 0;
     display: flex;
     background-color: aqua;
 }
-footer{
-    background-color: #F0F0F4;
+
+footer {
+    background-color: #f0f0f4;
 }
